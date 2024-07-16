@@ -9,13 +9,15 @@ import BackgroundSaman from "../components/BackgroundSaman.js"
 export default function RootLayout({ children }) {
 
   useEffect(() => {
-    var pos = document.documentElement;
-    pos.addEventListener('mousemove', e => {
-      pos.style.setProperty('--x', e.clientX + 'px')
-      pos.style.setProperty('--y', e.clientY + 'px')
-    })
+    if (typeof document !== "undefined") {
+      var pos = document.documentElement;
+      pos.addEventListener('mousemove', e => {
+        pos.style.setProperty('--x', e.clientX + 'px')
+        pos.style.setProperty('--y', e.clientY + 'px')
+      })
+    }
   })
-  
+
 
   return (
     <html lang="en" suppressHydrationWarning>
