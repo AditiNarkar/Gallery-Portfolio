@@ -20,7 +20,7 @@ export default function artworks() {
                         <Link style={{ color: "#a45409", textDecoration: "none" }} href="/artworks"> art works </Link>
                     </div>
                     <button className={styles.button85} role="button">
-                        <a style={{ textDecoration: "none", color: "rgb(174, 101, 28)" }} href="https://aditi-narkar.netlify.app/" >Portfolio</a>
+                        <a style={{ textDecoration: "none", color: "rgb(174, 101, 28)" }} href="https://aditi-narkar.netlify.app/portfolio.html" >Portfolio</a>
                     </button>
                 </div>
 
