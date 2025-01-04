@@ -22,6 +22,12 @@ export default function PopOver() {
             case 'javachatapp': setImages(JavaChatApp); break;
             case 'gitstake': setImages(null); break;
             case 'alberta': setImages(Alberta); break;
+            case 'fabric': setImages(Fabric); break;
+            case 'mehendi': setImages(Mehendi); break;
+            case 'pastels': setImages(Pastels); break;
+            case 'posters': setImages(Posters); break;
+            case 'pot': setImages(Pot); break;
+            case 'rangoli': setImages(Rangoli); break;
         }
     }, [title])
 

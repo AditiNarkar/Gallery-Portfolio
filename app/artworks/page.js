@@ -4,6 +4,7 @@ import Link from 'next/link'
 import note from "../assets/note2.png"
 import wallItem from "../assets/wall_item1.png"
 import "bootstrap/dist/css/bootstrap.min.css"
+import ProjectModal from "../../components/ProjectModal"
 
 export default function artworks() {
     return (
@@ -26,14 +27,36 @@ export default function artworks() {
 
 
                 <div className={styles.myContainer}>
-                    <span
+                    {/* <span
                         style={{ color: "#a45409", fontSize: 70 }}
 
-                    >UNDER DEVELOPMENT</span>
+                    >UNDER DEVELOPMENT</span> */}
 
-                    {/* <ProjectModal title="SPORTIFY" github="https://github.com/AditiNarkar/Sportify" image={'CCMS/homeMain.png'} />
-                        <ProjectModal title="Local-Karobar" github="https://github.com/AditiNarkar/Local-Karobar" image={'LocalKarobar/home1.png'} />
-                    */}
+                    <div className={styles.gallery}>
+                        <div className={styles.column}>
+                            <ProjectModal title="Posters" github="" image={'My Art/Poster/monochrome.jpg'} />
+                            <ProjectModal title="Wall" github="" image={'My Art/Wall/door.jpg'} />
+                        </div>
+
+                        <div className={styles.column}>
+                            <ProjectModal title="Pastels" github="" image={'My Art/Pastels/vintage_still.jpg'} />
+                            <ProjectModal title="Rangoli" github="" image={'My Art/Rangoli/3.jpg'} />
+                        </div>
+
+                        <div className={styles.column}>
+                            <ProjectModal title="Fabric" github="" image={'My Art/Fabric/woman-dark.jpg'} />
+                            <ProjectModal title="Mehendi" github="" image={'My Art/Mehendi/5.jpg'} />
+                        </div>
+
+                        <div className={styles.column}>
+                            <ProjectModal title="Pot" github="" image={'My Art/Pot/RJ.jpg'} />
+                        </div>
+
+                        <div className={styles.column}>
+                            <ProjectModal title="Sketches" github="" image={'My Art/Sketches/RJ.jpg'} />
+                        </div>
+
+                    </div>
 
                 </div>
             </div >
