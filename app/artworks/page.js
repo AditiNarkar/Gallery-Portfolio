@@ -5,10 +5,13 @@ import note from "../assets/note2.png"
 import wallItem from "../assets/wall_item1.png"
 import "bootstrap/dist/css/bootstrap.min.css"
 import ProjectModal from "../../components/ProjectModal"
+import PopOver from "../../components/PopOver"
 
 export default function artworks() {
     return (
         <>
+            <PopOver />
+
             <div style={{ width: "2500px", height: "2500px" }}>
 
                 <div className={styles.menuHolder}>

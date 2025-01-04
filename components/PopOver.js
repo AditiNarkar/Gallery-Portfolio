@@ -1,6 +1,6 @@
 'use client';
 
-import { Akshaypatra, FoodApp, JavaChatApp, LK, SoulSpeak, Sportify, Alberta } from "../filenames/filenames";
+import { Akshaypatra, FoodApp, JavaChatApp, LK, SoulSpeak, Sportify, Alberta, Fabric, Mehendi, Pastels, Poster, Pot, Rangoli, Sketches, Wall } from "../filenames/filenames";
 
 import { useEffect, useState } from "react";
 import Slider from "./Slider";
@@ -25,9 +25,12 @@ export default function PopOver() {
             case 'fabric': setImages(Fabric); break;
             case 'mehendi': setImages(Mehendi); break;
             case 'pastels': setImages(Pastels); break;
-            case 'posters': setImages(Posters); break;
+            case 'posters': setImages(Poster); break;
             case 'pot': setImages(Pot); break;
             case 'rangoli': setImages(Rangoli); break;
+            case 'sketches': setImages(Sketches); break;
+            case 'wall': setImages(Wall); break;
+
         }
     }, [title])
 
