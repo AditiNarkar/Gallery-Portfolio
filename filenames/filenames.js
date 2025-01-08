@@ -112,8 +112,7 @@ export const Poster = [
 
 export const Pot = [
     'My Art/Pot/RJ.jpg',
-    'My Art/Pot/fisher2.jpg',
-    'My Art/Pot/fisher1.jpg',
+    'My Art/Pot/fisher.jpg',
     'My Art/Pot/Butterfly.jpg',
     'My Art/Pot/abstract.jpg'
 ]
