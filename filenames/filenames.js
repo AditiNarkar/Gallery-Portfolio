@@ -22,7 +22,7 @@ export const Akshaypatra = [
 ]
 
 export const AuroraScope = [
-    'home.png', 'bot.png'
+    'AuroraScope/home.png', 'AuroraScope/bot.png'
 ]
 
 export const FoodApp = [
