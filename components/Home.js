@@ -38,8 +38,7 @@ export default function Home() {
 
                         <div className={styles.column}>
                             <ProjectModal title="Local-Karobar" github="https://github.com/AditiNarkar/Local-Karobar" image={'LocalKarobar/home1.png'} />
-                            <ProjectModal title="GitStake" github="" image={'GitStake/home.jpeg'} />
-
+                            <ProjectModal title="AuroraScope" github="" image={'AuroraScope/home.png'} />
                         </div>
 
                         <div className={styles.column}>
