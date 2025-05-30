@@ -9,8 +9,8 @@ export default function MenuHeader({ active }) {
             <div className={styles.menuHolder}>
                 <Image className={styles.paper} src={note} alt="" />
                 <Image className={styles.holder} src={wallItem} alt="" />
-                <div style={{ color: "#a45409" }} className={styles.projects}>projects</div>
-                <div className={styles.paintings}>art works</div>
+                <div style={{ color: "#a45409" }} className={styles.Projects}>UI Projects</div>
+                <div className={styles.paintings}>Art Works</div>
             </div>
         )
     }
@@ -20,8 +20,8 @@ export default function MenuHeader({ active }) {
             <div className={styles.menuHolder}>
                 <Image className={styles.paper} src={note} alt="" />
                 <Image className={styles.holder} src={wallItem} alt="" />
-                <div className={styles.projects}>projects</div>
-                <div style={{ color: "#a45409" }} className={styles.paintings}>art works</div>
+                <div className={styles.Projects}>UI Projects</div>
+                <div style={{ color: "#a45409" }} className={styles.paintings}>Art Works</div>
             </div>
         )
     }

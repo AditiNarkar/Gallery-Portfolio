@@ -1,3 +1,5 @@
+'use client'
+
 import Image from "next/image";
 import Link from 'next/link'
 import styles from "../app/page.module.css";
@@ -17,13 +19,16 @@ export default function Home() {
                     <Image className={styles.paper} src={note} alt="" />
                     <Image className={styles.holder} src={wallItem} alt="" />
                     <div className={styles.projects}>
-                        <Link style={{ color: "#a45409", textDecoration: "none" }} href="/">projects</Link>
+                        <Link style={{ color: "#a45409", textDecoration: "none" }} href="/">UI Projects</Link>
                     </div>
                     <div className={styles.paintings}>
-                        <Link style={{ color: "#734820", textDecoration: "none" }} href="/artworks"> art works </Link>
+                        <Link style={{ color: "#734820", textDecoration: "none" }} href="/artworks"> Art Works </Link>
                     </div>
-                    <button className={styles.button85} role="button">
-                        <a style={{ textDecoration: "none", color: "rgb(174, 101, 28)" }} href="https://aditi-narkar.netlify.app/" >Portfolio</a>
+                    <button className={styles.button85} role="button" onClick={() => window.open("https://aditi-narkar.netlify.app/", "_blank")}>
+                        Portfolio
+                    </button>
+                    <button style={{ top: 270 }} className={styles.button85} role="button" onClick={() => window.open("https://forms.gle/tmZcMUmiN7P73kAW9", "_blank")}>
+                        Fill Enquiry Form
                     </button>
                 </div>
 

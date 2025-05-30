@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Kolker+Brush&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Teko:wght@300..700&display=swap");
 @import "https://unpkg.com/open-props" layer(design.system);
 @import "https://unpkg.com/open-props/normalize.min.css" layer(demo.support);
 
@@ -21,20 +21,22 @@
 .projects,
 .paintings {
   position: absolute;
-  font-family: "Kolker Brush", cursive;
-  font-weight: 400;
-  font-size: 50px;
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
   font-style: normal;
   color: #734820;
   cursor: pointer;
   z-index: 1000;
-  top: 10px;
-  left: 70px;
+  top: 40px;
+  left: 50px;
 }
 
 .paintings {
-  top: 50px;
-  left: 50px;
+  top: 80px;
+  left: 55px;
 }
 
 .holder {
@@ -205,7 +207,7 @@
   background: radial-gradient(
     circle at var(--x) var(--y),
     rgba(134, 119, 51, 0.092) 10%,
-    rgba(0, 0, 0, 0.795) 40%
+    rgba(0, 0, 0, 0.327) 40%
   );
 }
 
@@ -337,6 +339,10 @@
   animation: glowing-button-85 20s linear infinite;
   transition: opacity 0.3s ease-in-out;
   border-radius: 10px;
+}
+
+.fill-form-btn {
+  top: 260px;
 }
 
 @keyframes glowing-button-85 {
