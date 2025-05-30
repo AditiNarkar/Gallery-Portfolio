@@ -118,7 +118,8 @@ export const Pot = [
     'My Art/Pot/RJ.jpg',
     'My Art/Pot/fisher.jpg',
     'My Art/Pot/Butterfly.jpg',
-    'My Art/Pot/abstract.jpg'
+    'My Art/Pot/abstract.jpg',
+    'My Art/Pot/Alpona.jpeg'
 ]
 
 export const Rangoli = [
