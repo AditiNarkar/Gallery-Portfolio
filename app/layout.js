@@ -2,21 +2,37 @@
 
 import "./globals.css";
 
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import styles from "./page.module.css";
 import BackgroundSaman from "../components/BackgroundSaman.js"
 
 export default function RootLayout({ children }) {
 
+  const [isMobile, setIsMobile] = useState(false);
+
   useEffect(() => {
     if (typeof document !== "undefined") {
-      var pos = document.documentElement;
-      pos.addEventListener('mousemove', e => {
-        pos.style.setProperty('--x', e.clientX + 'px')
-        pos.style.setProperty('--y', e.clientY + 'px')
-      })
+      const pos = document.documentElement;
+      const mouseMoveHandler = (e) => {
+        pos.style.setProperty('--x', e.clientX + 'px');
+        pos.style.setProperty('--y', e.clientY + 'px');
+      };
+      pos.addEventListener('mousemove', mouseMoveHandler);
+
+
+      const checkMobile = () => {
+        setIsMobile(window.innerWidth <= 768); // You can adjust the breakpoint
+      };
+
+      checkMobile();
+      window.addEventListener('resize', checkMobile);
+
+      return () => {
+        pos.removeEventListener('mousemove', mouseMoveHandler);
+        window.removeEventListener('resize', checkMobile);
+      };
     }
-  })
+  }, [])
 
 
   return (
@@ -27,7 +43,7 @@ export default function RootLayout({ children }) {
       </head>
       <body>
         <BackgroundSaman />
-        <div className={styles.torch}></div>
+        {!isMobile && <div className={styles.torch}></div>}
         {children}
       </body>
     </html>

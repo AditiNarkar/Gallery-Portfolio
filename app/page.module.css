@@ -7,16 +7,19 @@
   transform: translateY(-10px);
 }
 
-/* .bg img:hover, .menu-Holder img:hover{
-    transform: none;
-} */
-
 .menuHolder {
   position: absolute;
   top: 50px;
   left: -20px;
   width: 639px;
   z-index: 2000;
+}
+@media (max-width: 640px) {
+  .menuHolder {
+    scale: 0.8;
+    top: 0px;
+    left: -50px;
+  }
 }
 .projects,
 .paintings {
@@ -46,7 +49,14 @@
   width: 84px;
   z-index: 60;
 }
-
+@media (max-width: 640px) {
+  .paper {
+    rotate: 90deg;
+  }
+  .holder {
+    top: -30px;
+  }
+}
 .paper {
   width: 180px;
   position: absolute;
@@ -188,6 +198,7 @@
   position: absolute;
   width: 100%;
   top: -2%;
+  transition: transform 0.5s;
 }
 .floor {
   position: absolute;
@@ -234,7 +245,7 @@
   /* border-image: url(../public/frame2.png) 30 round; */
 }
 
-.gallery {
+/* .gallery {
   display: flex;
   gap: 10px;
 }
@@ -243,6 +254,14 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
+} */
+
+@media (max-width: 640px) {
+  .myContainer {
+    overflow-y: scroll;
+    top: 130px;
+    left: 10%;
+  }
 }
 
 /* .photo {
@@ -341,8 +360,18 @@
   border-radius: 10px;
 }
 
-.fill-form-btn {
-  top: 260px;
+.fillFormBtn {
+  top: 270px;
+}
+
+@media (max-width: 640px) {
+  .button85 {
+    top: 50px;
+    left: 230px;
+  }
+  .fillFormBtn {
+    left: 350px;
+  }
 }
 
 @keyframes glowing-button-85 {
